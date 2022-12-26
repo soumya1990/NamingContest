@@ -4,7 +4,8 @@
   "description": "Fullstack development test project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon -exec babel-node server.js --ignore public/",
+    "dev": "webpack -wd"
   },
   "repository": {
     "type": "git",
@@ -24,9 +25,9 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.19.3",
     "@babel/core": "^7.20.5",
     "@babel/eslint-parser": "^7.19.1",
+    "@babel/node": "^7.20.5",
     "@babel/plugin-proposal-class-properties": "^7.18.6",
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
